@@ -32,6 +32,11 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
+        jMenuBar1 = new javax.swing.JMenuBar();
+        jMenu2 = new javax.swing.JMenu();
+        jMenuItem1 = new javax.swing.JMenuItem();
+        jMenuItem2 = new javax.swing.JMenuItem();
+        jMenuItem3 = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -72,6 +77,36 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ifrs.png"))); // NOI18N
 
+        jMenu2.setText("Manuntenção");
+
+        jMenuItem1.setText("Aluno");
+        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem1ActionPerformed(evt);
+            }
+        });
+        jMenu2.add(jMenuItem1);
+
+        jMenuItem2.setText("Prova");
+        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem2ActionPerformed(evt);
+            }
+        });
+        jMenu2.add(jMenuItem2);
+
+        jMenuItem3.setText("Turma");
+        jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem3ActionPerformed(evt);
+            }
+        });
+        jMenu2.add(jMenuItem3);
+
+        jMenuBar1.add(jMenu2);
+
+        setJMenuBar(jMenuBar1);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -81,39 +116,34 @@ public class TelaPrincipal extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jButton3)
-                        .addGap(18, 18, 18)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jButton1)
-                        .addGap(18, 18, 18)
-                        .addComponent(jButton2))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jButton2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jButton4))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(92, 92, 92)
-                        .addComponent(jButton4)))
-                .addContainerGap(70, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jLabel1)
-                        .addGap(97, 97, 97))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jLabel2)
-                        .addGap(89, 89, 89))))
+                        .addGap(142, 142, 142)
+                        .addComponent(jLabel1))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(134, 134, 134)
+                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel1)
-                .addGap(26, 26, 26)
-                .addComponent(jLabel2)
-                .addGap(67, 67, 67)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(93, 93, 93)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton3)
+                    .addComponent(jButton2)
                     .addComponent(jButton1)
-                    .addComponent(jButton2))
-                .addGap(31, 31, 31)
-                .addComponent(jButton4)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jButton3)
+                    .addComponent(jButton4))
+                .addGap(61, 61, 61))
         );
 
         pack();
@@ -137,6 +167,24 @@ janela.setVisible(true);        // TODO add your handling code here:
 ManuntencaoProva janela = new ManuntencaoProva(this, true);
 janela.setVisible(true);        // TODO add your handling code here:
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
+ManuntencaoTurma janela = new ManuntencaoTurma(this, true);
+janela.setVisible(true);        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem3ActionPerformed
+
+    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+ManuntencaoAluno janela = new ManuntencaoAluno(this, true);
+janela.setVisible(true);        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem1ActionPerformed
+
+    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
+             // TODO add your handling code here:
+        // TODO add your handling code here:
+        // TODO add your handling code here:
+ManuntencaoProva janela = new ManuntencaoProva(this, true);
+janela.setVisible(true);        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -180,5 +228,10 @@ janela.setVisible(true);        // TODO add your handling code here:
     private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JMenu jMenu2;
+    private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JMenuItem jMenuItem2;
+    private javax.swing.JMenuItem jMenuItem3;
     // End of variables declaration//GEN-END:variables
 }
